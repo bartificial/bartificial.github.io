@@ -8,7 +8,27 @@
 <body>
     <h1>¡Desbloquea el contenido!</h1>
     <p>Para acceder al enlace, sigue nuestra página de Facebook:</p>
-    <a href="https://www.facebook.com/tu_pagina" target="_blank">Sigue nuestra página</a>
-    <p>Una vez que hayas seguido la página, podrás acceder al enlace deseado.</p>
+    <a href="https://www.facebook.com/dd.freestyle1" target="_blank">Sigue nuestra página</a>
+    <p>Una vez que hayas seguido la página, haz clic en el botón de desbloqueo:</p>
+    <button id="botonDesbloqueo" style="display: none;">Desbloquear</button>
+
+    <script>
+        // Verificar si se siguió la página de Facebook
+        function verificarSeguimiento() {
+            // Aquí puedes agregar lógica para verificar si el usuario siguió la página.
+            // Por ahora, simplemente simularemos que se siguió la página.
+            return true;
+        }
+
+        // Mostrar el botón de desbloqueo si se siguió la página
+        if (verificarSeguimiento()) {
+            document.getElementById("botonDesbloqueo").style.display = "block";
+        }
+
+        // Función para redirigir al enlace de destino
+        function desbloquearContenido() {
+            window.location.href = "https://t.me/+kxGWW01ZEqllMDcx";
+        }
+    </script>
 </body>
 </html>
